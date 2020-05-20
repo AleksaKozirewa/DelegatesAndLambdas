@@ -4,33 +4,34 @@ namespace ConsoleApp1
 {
     public class Example
     {
-        delegate void Message();
+        delegate void GetMessage();
 
         static void Main(string[] args)
         {
-            Message mes;
-            int seconds = 3;
+            int userTickCount = int.Parse(Console.ReadLine());
 
-            for (int i = 0; i < seconds; i++)
+            TickTimer(userTickCount, OnTimerFinish);
+
+            Console.ReadLine();
+        }
+
+        private static void OnTimerFinish()
+        {
+            Console.WriteLine("Time is up");
+        }
+
+        private static void TickTimer(int tickCount, GetMessage del)
+        {
+            for (var tickCounter = tickCount; tickCounter >= 0; tickCounter--)
             {
-                Console.WriteLine("Введите 1, чтобы прошла 1 секунда");
-                int a = Convert.ToInt32(Console.ReadLine());
-                if (a != 1)
+                Console.WriteLine($"Timer value is {tickCounter}");
+                Console.ReadLine();
+                
+                if (tickCounter == 0)
                 {
-                    Console.WriteLine("Вы ввели не 1");
-                    i = i - 1;
-                }
-                else if (i == 2)
-                {
-                    mes = TimeIsUp;
-                    mes();
+                    del?.Invoke();
                 }
             }
-            Console.ReadKey();
-        }
-        private static void TimeIsUp()
-        {
-            Console.WriteLine("Прошло 3 секунды");
         }
     }
 }
