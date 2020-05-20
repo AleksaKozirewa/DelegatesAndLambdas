@@ -4,8 +4,6 @@ namespace ConsoleApp1
 {
     public class Example
     {
-        delegate void GetMessage();
-
         static void Main(string[] args)
         {
             int userTickCount = int.Parse(Console.ReadLine());
@@ -20,7 +18,7 @@ namespace ConsoleApp1
             Console.WriteLine("Time is up");
         }
 
-        private static void TickTimer(int tickCount, GetMessage del)
+        private static void TickTimer(int tickCount, Action timeIsUp)
         {
             for (var tickCounter = tickCount; tickCounter >= 0; tickCounter--)
             {
@@ -29,7 +27,7 @@ namespace ConsoleApp1
                 
                 if (tickCounter == 0)
                 {
-                    del?.Invoke();
+                    timeIsUp?.Invoke();
                 }
             }
         }
