@@ -1,0 +1,11 @@
+C:\Train\Delegates&Lambdas\ConsoleApp3\ConsoleApp3\bin\Debug\netcoreapp2.1\ConsoleApp3.deps.json
+C:\Train\Delegates&Lambdas\ConsoleApp3\ConsoleApp3\bin\Debug\netcoreapp2.1\ConsoleApp3.runtimeconfig.json
+C:\Train\Delegates&Lambdas\ConsoleApp3\ConsoleApp3\bin\Debug\netcoreapp2.1\ConsoleApp3.runtimeconfig.dev.json
+C:\Train\Delegates&Lambdas\ConsoleApp3\ConsoleApp3\bin\Debug\netcoreapp2.1\ConsoleApp3.dll
+C:\Train\Delegates&Lambdas\ConsoleApp3\ConsoleApp3\bin\Debug\netcoreapp2.1\ConsoleApp3.pdb
+C:\Train\Delegates&Lambdas\ConsoleApp3\ConsoleApp3\obj\Debug\netcoreapp2.1\ConsoleApp3.csprojAssemblyReference.cache
+C:\Train\Delegates&Lambdas\ConsoleApp3\ConsoleApp3\obj\Debug\netcoreapp2.1\ConsoleApp3.csproj.CoreCompileInputs.cache
+C:\Train\Delegates&Lambdas\ConsoleApp3\ConsoleApp3\obj\Debug\netcoreapp2.1\ConsoleApp3.AssemblyInfoInputs.cache
+C:\Train\Delegates&Lambdas\ConsoleApp3\ConsoleApp3\obj\Debug\netcoreapp2.1\ConsoleApp3.AssemblyInfo.cs
+C:\Train\Delegates&Lambdas\ConsoleApp3\ConsoleApp3\obj\Debug\netcoreapp2.1\ConsoleApp3.dll
+C:\Train\Delegates&Lambdas\ConsoleApp3\ConsoleApp3\obj\Debug\netcoreapp2.1\ConsoleApp3.pdb
