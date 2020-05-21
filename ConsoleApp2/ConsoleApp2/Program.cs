@@ -4,28 +4,24 @@ namespace ConsoleApp2
 {
     class Program
     {
-        delegate void CompareOperation(int x, int y);
-
         static void Main(string[] args)
         {
-            CompareOperation op = ComparingTwo;
+            int firstValue = int.Parse(Console.ReadLine());
+            int secondValue = int.Parse(Console.ReadLine());
 
-            ComparingTwo(6, 3);
+            GetMaximumValue(firstValue, secondValue, GetMax);
 
             Console.ReadKey();
-
+        }
+        
+        private static void GetMaximumValue(int x, int y, Func<int, int, int> getMax)
+        {
+            Console.WriteLine($"Самое большое число: {getMax(x, y)}");
         }
 
-        private static void ComparingTwo(int x, int y)
+        private static int GetMax(int x, int y)
         {
-            if (x < y)
-            {
-                Console.WriteLine(y + " наибольшее число");
-            }
-            else
-            {
-                Console.WriteLine(x + " наибольшее число");
-            }
+            return (x > y) ? x : y;
         }
     }
 }
