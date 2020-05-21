@@ -8,8 +8,6 @@ namespace ConsoleApp3
 {
     class Program
     {
-        delegate bool IsEqual(int x);
-
         static void Main(string[] args)
         {
             int[] numbers = {1, 2, 3, 4, 5};
@@ -22,13 +20,13 @@ namespace ConsoleApp3
             Console.ReadKey();
         }
 
-        private static List<int> Operation(int[] numbers, IsEqual func)
+        private static List<int> Operation(int[] numbers, Func<int,bool> isEqual)
         {
             List<int> targetNumbers = new List<int>();
 
             foreach (int number in numbers)
             {
-                if (func(number))
+                if (isEqual(number))
                 {
                     targetNumbers.Add(number);
                 }
